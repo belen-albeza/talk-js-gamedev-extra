@@ -274,6 +274,8 @@ body
             ul
                 li Used in most 2D games since forever
                 li Build up your level out of small images (tiles)
+                li Orthogonal / isometric
+                li Several shapes, but most common is square
 
         section
             p: img(src="images/square_tiles.png").figure
@@ -281,14 +283,14 @@ body
         section
             h1 Advantages
             ul
-                li Easy-to-build levels
-                li Low memory use
+                li Easy-to-build levels (both manually and procedurally)
+                li Low memory use (good for scrolling levels)
                 li Game logic can be mapped to a grid (collisions, AI, physics, etc.)
 
         section
             h1 Tile maps in Phaser
             ul
-                li Support for rect-based tile maps (<code>Phaser.TileMap</code>)
+                li Support for rect-based, orthogonal tile maps (<code>Phaser.TileMap</code>)
                 li Physics-engine integration
                 li Look at the <a href="http://phaser.io/examples/v2/category/tilemaps">examples</a>!
 
@@ -298,16 +300,6 @@ body
                 li Can be time-saving, specially for prototypes
                 li Phaser has a JSON importer for <a href="http://www.mapeditor.org/">Tiled</a>
             p: img(src="images/tiled_editor.png" height="300")
-
-        section
-            h1 Other types of tilemaps
-            ul
-                li Isometric
-                li Hexagonal
-            p
-
-
-
 
         section
             h1 The rest
